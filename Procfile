@@ -1,1 +1,1 @@
-gunicorn djen_project.wsgi
+web: gunicorn djen_project.wsgi
