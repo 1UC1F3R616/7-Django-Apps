@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cd_library',
-    'pastebin'
+    'pastebin',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'djen_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,6 +70,9 @@ TEMPLATES = [
         },
     },
 ]
+print('\n\n\n')
+print(BASE_DIR)
+print('\n\n\n')
 
 WSGI_APPLICATION = 'djen_project.wsgi.application'
 
