@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*t8uzo@^2ce_nm#dr!7^a=-y8w1p1qt1qkpksq6n_doc(i3ujr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['django7apps.herokuapp.com', '127.0.0.1']
 
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cd_library',
     'pastebin',
-    'blog'
+    'blog',
+    'wiki'
 ]
 
 MIDDLEWARE = [
